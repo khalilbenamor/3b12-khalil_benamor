@@ -1,0 +1,167 @@
+<<html>
+	<head>
+		<meta charset="UTF-8">
+	<title>Khalil Ben Amor</title>
+	</head>
+	<body>
+		<header>
+			<div class="hero">
+				<center>
+					<nav>
+						<ul>
+					<li><a id="az" href="index.html" class="main.btn">Accueil</a></li>
+					<li><a id="az" href="parcours academiques.html">Parcours academiques</a></li>
+					<li><a id="az" href="Experiences.html">Experiences</a></li>
+					<li><a id="az" href="competences.html">competences</a></li>
+					
+				</ul>
+				
+				</nav>
+			</div>
+			</center>
+			<br/>
+			<style>
+				nav ul li{
+					list-style-type: none;
+					display: inline-block;
+					padding: 10px 25px;
+				}
+				nav ul li a{
+					color: black;
+					text-decoration:none;
+					font-weight:bold;
+					text-transform: capitalize;
+				}
+				nav ul li a:hover{
+					color:rgba(32, 173, 154, 0.918);
+					transition: .4s;
+				}
+				#az{
+					text-decoration: none;
+					font-size: 20px;
+				}
+			   
+				h2{
+					color:rgba(32, 173, 154, 0.918);
+					font-size: 22px;
+					font-family: Georgia, 'Times New Roman', Times, serif;
+				}
+				p{
+					font-size: 20px;
+				}
+				
+			</style>
+		</header>
+		
+	</header>
+
+	<main role="main">
+		
+		<section class="about">
+		
+		<section id="contact" class="contact">
+			<div class="contact__visual">
+				<center>
+				<img src="logoespit .jpg"alt="" high ="100px">           
+				</center>
+			</div>
+			<center>
+			<h2 class="contact__heading title">Contacter Moi</h2>
+		</center>
+				<center>
+			<div class="contact__wrapper wrapper--large">
+				
+				
+				<div class="form">
+					<form name="contactsform" action="" id="form-contact" onsubmit="submiting()">
+	
+						<div class="item">
+							<Label for="name">Name</Label>
+							<input type="text" name="name" id="name" placeholder="Your First Name" spellcheck="false">
+						</div>
+	
+						<div class="item">
+							<Label for="email">Email</Label>
+							<input type="text" name="email" id="email" placeholder="Your Email" spellcheck="false"><br>
+						</div>
+	
+						<div class="item">
+							<Label for="msg">Message</Label>
+							<textarea name="subject" cols="26" placeholder="Your Message" rows="5"></textarea><br>
+						</div>
+
+						<div class="item">
+							<Label for="name">passe</Label>
+							<input type="text" name="name" id="passe" placeholder="p" spellcheck="false">
+						</div>
+	
+						<div class="item">
+							<Label for="email">cpasse</Label>
+							<input type="text" name="email" id="cpasse" placeholder="cp" spellcheck="false"><br>
+						</div>
+						<div class="btn-submit">
+							<input type="submit" value="Send">
+						</div>
+	
+					</form>
+					<script>
+					function submiting()
+					{
+							var name=document.contactsform.name.value
+							var email=document.contactsform.email.value
+							var subjet=document.contactsform.subject.value
+	
+							var a = "@";
+							var pt= ".";
+							var expressionReguliere 
+	
+							if (email.length === 0 || name.length === 0 ||subjet.length===0) {
+								  alert("tous les champs sont obligatoires");
+							}
+							else
+							{
+								  if(email.search(a)===-1)
+										alert('Adresse e-mail non valide');
+								  else
+								  {
+										alert("Nous avons bien reçu votre demande et vous contacterons le plus rapidement possible. ");
+								  }    
+							}
+	
+					}
+					</script>
+				</div>
+			</div>
+		</center>
+		</section>
+	
+	</main>
+	
+	<footer >
+		<hr>
+        <tabele>
+         <tr>
+           
+            <td>
+        <center><a href="https://www.facebook.com/profile.php?id=100009438306158&mibextid=ZbWKwL"><img src="https://www.unipile.com/wp-content/uploads/2022/06/logo-facebook.png" alt="Logo Fb"height="50" widhth="10"></a>
+                
+                </td>
+            <td>
+                <a href="https://www.instagram.com/khalil_ben_amor_?igshid=NGVhN2U2NjQ0Yg%3D%3D&fbclid=IwAR0P4DIeaRMxm-zs0hAsQlu7ZzxidsZVYei3dyi42IobQ9u9-p6qSA5n5tA"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt="Logo instagrame"height="50" widhth="10"></a>
+            </td>
+        
+            <td>
+                 <p class="footer__copyright no-margin">&copy; 2023-2024 -Esprit</p>
+            
+                </center>
+            </td>
+        </tr>
+        </tabele>
+	</footer>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="js/functions-min.js"></script>
+
+</body>
+</html>
